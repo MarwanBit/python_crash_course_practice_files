@@ -1,6 +1,6 @@
 # a list in python is contained with square brackets
 # an example is provided in line 3
-car_types = ["Ferrari","Lamborghini", "Tesl", "Nissan", "Ford", "BMW"]
+car_types = ["Ferrari","Lamborghini", "Tesl", "Nissan", "Ford", "BMW", "Jaguar"]
 
 #to pick an individual item in a list pick its number in the index of the list
 # Ex:this would print the Lambo string cause it goes 0,1,2,3,4 and so on
