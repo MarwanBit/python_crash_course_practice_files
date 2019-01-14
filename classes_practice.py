@@ -22,23 +22,34 @@ class User():
 	
 	def reset_login_attempts(self):
 		self.login_attempts = 0
-		
-class Admin(User):
-	
-	def __init__(self, first_name, last_name, age, gender):
-		super().__init__(first_name, last_name, age, gender)
-		self.privileges = [
+
+class Privileges():
+	'''
+	This class is a subclass of User which gives specific methods
+	and objects dealing with admin privileges
+	'''
+	def __init__(self):
+		self.privileges =  [
 							'editing',
 							'kicking',
 							'can delete posts',
 							'launching an investigation'
 							]
-							
+
 	def show_privileges(self):
 		print(self.privileges)
 		
+class Admin(User):
+	
+	def __init__(self, first_name, last_name, age, gender):
+		super().__init__(first_name, last_name, age, gender)
+		self.admin_privileges = Privileges()
+
+
+
 user_1 = Admin("marwan", "bit", 16, "Male")
-user_1.show_privileges()
+user_1_privileges = Privileges()
+user_1.admin_privileges.show_privileges()
 		
 	
 		    

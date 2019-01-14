@@ -1,0 +1,275 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"setting",
+				"settings_example"
+			],
+			[
+				"higher",
+				"higher_status_document"
+			],
+			[
+				"learning_",
+				"learning_python_file"
+			],
+			[
+				"pi_file",
+				"pi_file_lines_counter"
+			],
+			[
+				"len",
+				"len_of_file_object"
+			],
+			[
+				"list",
+				"list_of_states_for_show"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Shadow/Documents/GitHub/python_video_game_project/images/ship.bmp",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/json_practice.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/json_practice_2.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/json_fusion_fall.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/Fusion_Fall_Missions.json",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/username.json",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/higher_status.txt",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/cat_and_dogs_file.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/guest.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/learning_python.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/learning_python.txt",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/pi_digits.txt",
+		"/C/Users/Shadow/Documents/GitHub/1.4.3-Assignment/Question4_1_4_3Assignment.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/videogame_project_2.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/videogame_project.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/type_errors_fix.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/tuples.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/testing_continue_function.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/stripping_names.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/strings.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/stages_of_life.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/simple_messages_2.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/simple_messages.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/rough_draft_license_plate_game.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/rivers.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/restaurant_seeting.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/rental_car.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/remove_method_lists.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/README.md",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/popping_in_lists.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/polling.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/pizza_toppings.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/pets.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/personal_message.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/person.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/parrot.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/organizing_lists_practice.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/organizing_lists.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/ordinal_numbers.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/number_practice.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/name_cases.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/name.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/multiple_of_ten.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/movie_tickets_copy.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/movie_tickets.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/module_practice.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/lists_practice_using_friends.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/lists_practice_personal.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/lists_practice_greetings.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/lists_and_numbers_2.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/lists_and_numbers.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/lists_and_loops.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/lists.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/license_plate_game_2.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/integers.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/hello_world.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/hello_admin.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/guest_list.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/glossary.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/function_practice_2.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/function_practice.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/floats.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/favorite_places_dictionary.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/favorite_number.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/favorite_fruit.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/famous_quote_2.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/famous_quote.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/editing_lists.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/conditional_tests.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/comments.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/classes_practice_2.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/cities.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/classes_practice.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/checking_usernames.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/car_class_experiment_1.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/car_class.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/apostrophe.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/alien_colors_3.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/alien_colors_2.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/alien_colors.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/intro.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/file_reader.py",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/Independent VideoGame Projects",
+		"/C/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/__pycache__/car_class.cpython-37.pyc",
+		"/C/Users/Shadow/Desktop/python_work.py/UV Watch Project/uv_watch_functions.py",
+		"/C/Users/Shadow/Desktop/python_work.py/classes_practice.py",
+		"/C/Users/Shadow/AppData/Roaming/Sublime Text 3/Packages/User/Python3.sublime-build"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "alien_colors.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
