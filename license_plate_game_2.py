@@ -33,8 +33,7 @@ second_prompt += '\nnow enter your input here : '
 
 #Game while loop
 while plate_game_on == True:
-    message = input(str(prompt))
-    message.lower()
+    message = input(prompt)
     if message == 'quit':
         print('\nthanks for playing the license plate game' +
 	    ' have a good day!')
@@ -58,20 +57,15 @@ while plate_game_on == True:
         print('\n\tThe list of states has been reset!, you are starting' +
 	    ' from zero!!')
 		
-	    
-	elif message == 'show':
+    elif message == 'show':
         list_of_states_for_show = []
         for state in list_of_states:
             list_of_states_for_show.append(state)
-            if len(list_of_states_for_show) == 5:
-                print(list_of_states_for_show)
-                list_of_states_for_show = []
-                break
+        print(list_of_states_for_show)
     elif message in list_of_states:
-		list_of_states.remove(message)
-		print('\n ' + message + ' has been removed from the list of' +
-			' states')
-		break
+        list_of_states.remove(message)
+        print('\n ' + message + ' has been removed from the list of' + ' states')
+	
 
 while plate_game_on == True:
     message = input(str(second_prompt))
