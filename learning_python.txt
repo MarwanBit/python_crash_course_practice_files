@@ -1,7 +1,0 @@
-I have learned alot in python so far.
-I have learned about lists, tuples and dictionaries.
-I have learned about datatypes such as strings, integers and boolean logic.
-I have learned about for and while loops.
-I have learned about functions, methods and classes.
-I have learned about iteration and user_input.
-I have learned about splicing lists, concetation and many other tricks to manipulate data.
