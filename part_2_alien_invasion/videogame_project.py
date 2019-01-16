@@ -12,7 +12,7 @@ arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, "Drawing Example")
 # http://arcade.academy/arcade.color.html
 # Colors can also be specified in (red, green, blue) format and
 # (red, green, blue, alpha) format.	`
-arcade.set_background_color(arcade.color.BLACK)
+arcade.set_background_color(arcade.color.GREEN)
 
 # Start the render process. This must be done before any drawing commands.
 arcade.start_render()
