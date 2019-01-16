@@ -1,5 +1,5 @@
-cat_document = 'cat.txt'
-dog_document = 'dogs.txt'
+cat_document = 'C:/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/chapter_10_files_and_exceptions/python_text_files/cat.txt'
+dog_document = 'C:/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/chapter_10_files_and_exceptions/python_text_files/dogs.txt'
 
 with open(cat_document, 'r') as cat_document:
 	cat_document_lines = cat_document.readlines()
