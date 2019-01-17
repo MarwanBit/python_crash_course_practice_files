@@ -1,4 +1,5 @@
-higher_status_document = 'higher_status.txt'
+higher_status_document = 'C:/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/'
+higher_status_document += 'chapter_10_files_and_exceptions/python_text_files/higher_status.txt'
 success_counter = 0
 
 with open(higher_status_document, 'r', encoding = 'utf-8') as higher_status:
