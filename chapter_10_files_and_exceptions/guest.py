@@ -5,7 +5,8 @@ prompt = 'Hello guest... what is your name? :'
 guest_name = input(prompt)
 
 #This line stores a file_name called guest_list.txt in a variable called file
-file = 'guest_list.txt'
+file = 'C:/Users/Shadow/Documents/GitHub/python_crash_course_practice_files/'
+file += 'chapter_10_files_and_exceptions/python_text_files/guest.txt'
 
 '''
 Line 15 creates a file in write mode and stores it as guest_name_file.
