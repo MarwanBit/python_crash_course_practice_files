@@ -1,6 +1,6 @@
 import json
 
-json_practice = 'favorite_number.json'
+json_practice = 'python_text_files/favorite_number.json'
 
 try:
 	with open(json_practice) as file_obj:
