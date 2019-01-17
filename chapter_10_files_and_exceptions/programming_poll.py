@@ -5,9 +5,11 @@ prompt = 'Why do you like programming?:'
 one_way_flag = True
 
 #This variable is used to store a file name which holds all responses to the poll
-poll_responses = 'poll_responses.txt'
+poll_responses = 'python_text_files/poll_responses.txt'
 
 while one_way_flag == True:
 	user_input = input(prompt)
 	with open(poll_responses, 'a') as poll_responses_file:
 		poll_responses_file.write('\n' + user_input)
+	if user_input == 'quit':
+		break
