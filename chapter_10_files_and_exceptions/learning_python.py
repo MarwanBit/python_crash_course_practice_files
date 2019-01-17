@@ -1,4 +1,4 @@
-learning_python_file = 'learning_python.txt'
+learning_python_file = 'python_text_files/learning_python.txt'
 with open(learning_python_file) as python_file:
 	lines = python_file.readlines()
 
