@@ -3,7 +3,7 @@ import sys
 
 struct = {}
 fusion_fall_file = 'Fusion_Fall_Missions.json'
-data = fusion_fall_file.strip("'<>()").replace('\'','/"')
+data = fusion_fall_file.strip("'<>()").replace('"\'','/"')
 data = dict(data)
 data['random_help'] = '1'
 struct = json.load(data)
