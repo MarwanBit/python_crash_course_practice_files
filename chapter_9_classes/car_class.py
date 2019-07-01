@@ -52,3 +52,7 @@ class ElectricCar(Car):
 			"The size of your battery is..." +
 			str(self.size_of_battery)
 			)
+
+
+example_car =Car("Chevy", "2003", "4000", "Silverado")
+example_car.car_description()
