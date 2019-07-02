@@ -10,7 +10,7 @@ class TkinterInheritance(tk.Tk):
 		self.container = tk.Frame(self, height=300, width=300)
 		self.container.pack(side='top', fill='both',expand='true')
 
-		self.frames= {}
+		self.frames= {} 
 
 
 		
