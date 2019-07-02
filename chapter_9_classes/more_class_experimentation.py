@@ -7,7 +7,13 @@ class MainPage(tk.Tk):
 		tk.Tk.__init__(self, **kwargs)
 		tk.Tk.wm_title(self,"Yeet")
 
-		frame = tk.Frame(tk.Tk, height=300, width=300)
+		self.frame = tk.Frame(self, height=300, width=300)
+		self.frame.pack(side = "top", fill="both",expand=True)
+		self.frame.grid_rowconfigure(0, weight=1)
+		self.frame.grid_columnconfigure(0, weight=1)
+
+		self.button = tk.Button(self.frame,width=10, height=1, text="ohhh")
+		self.button.pack(side="top")
 
 
 
