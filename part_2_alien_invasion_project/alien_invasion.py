@@ -12,7 +12,7 @@ from pygame.sprite import Group
 from alien import Alien
 
 def run_game():
-	#Initialize the game and creates a scren object
+	#Initialize the game and creates a screen object
 	pygame.init()
 	ai_settings = Settings()
 	screen = pygame.display.set_mode(
