@@ -14,6 +14,7 @@ class Gallade(pygame.sprite.Sprite):
 		self.image_rect = self.image.get_rect()
 
 	def draw_sprite(self):
+		'''Draws the sprite ontop of the screen'''
 		self.image_rect.centerx = self.screen_rect.centerx
 		self.image_rect.bottom = self.screen_rect.bottom
 		self.screen.blit(self.image, self.image_rect)
