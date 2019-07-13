@@ -19,6 +19,8 @@ class Gallade(pygame.sprite.Sprite):
 		#movement flags
 		self.moving_right_flag = False
 		self.moving_left_flag = False
+		#Speed Factor/ Speed controls
+		self.ship_speed_factor = 1.5
 
 	def draw_sprite(self):
 		'''Draws the sprite ontop of the screen'''
