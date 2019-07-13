@@ -72,3 +72,4 @@ print(find_difference(14,12))
 #Note: Decorators take in a function and return a modified function which you can then call 
 #Note: Decorators are applied from a bottom up way, for example above, find_difference is put into
 # dec_1, and then the function returned is put into dec_2
+#You can also make a decorator for a decorator!
