@@ -16,11 +16,23 @@ class Gallade(pygame.sprite.Sprite):
 		self.image_rect.centerx = self.screen_rect.centerx
 		self.image_rect.bottom = self.screen_rect.bottom
 
+		#movement flags
+		self.moving_right_flag = False
+		self.moving_left_flag = False
+
 	def draw_sprite(self):
 		'''Draws the sprite ontop of the screen'''
 		self.image_rect.centerx = self.image_rect.centerx 
 		self.image_rect.bottom = self.image_rect.bottom 
 		self.screen.blit(self.image, self.image_rect)
+
+	def update(self):
+		'''updates the movement flag depending on which key is pressed'''
+		if self.moving_right_flag:
+			self.image_rect.centerx += 1
+		if self.moving_left_flag:
+			self.image_rect.centerx -= 1
+			
 
 
 #Runs the file if it's ran directly
@@ -44,6 +56,7 @@ if __name__ == "__main__":
 
 		#Fills the screen with a white color
 		screen.fill((255,255,255))
+		
 
 		for event in pygame.event.get():
 			'''Event loop'''
@@ -54,14 +67,20 @@ if __name__ == "__main__":
 				'''Executes certain events depending on which key is pressed'''
 				#controls an event when the left key is pressed
 				if event.key == pygame.K_LEFT:
-					sprite.image_rect.centerx = sprite.image_rect.centerx - sprite.acceleration_constant
+					sprite.moving_left_flag = True					
 				if event.key == pygame.K_RIGHT:
-					sprite.image_rect.centerx = sprite.image_rect.centerx + sprite.acceleration_constant
-			
+					sprite.moving_right_flag = True					
+			if event.type == pygame.KEYUP:
+				if event.key == pygame.K_LEFT:
+					sprite.moving_left_flag = False
+				if event.key == pygame.K_RIGHT:
+					sprite.moving_right_flag = False 
+	
+		#update's the sprite
+		sprite.update()
 
 		#Draw the Gallade Image
 		sprite.draw_sprite()
-
 
 		#Updates the screen
 		pygame.display.flip()
