@@ -145,5 +145,4 @@ def say_yaga():
 	'''returns the string yaga'''
 	return 'yaga' 
 
-wrapper_func = decorator_1(say_yaga)
-print(wrapper_func())
+print(say_yaga())
