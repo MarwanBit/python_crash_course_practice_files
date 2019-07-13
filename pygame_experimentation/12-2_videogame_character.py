@@ -57,6 +57,7 @@ if __name__ == "__main__":
 					sprite.image_rect.centerx = sprite.image_rect.centerx - sprite.acceleration_constant
 				if event.key == pygame.K_RIGHT:
 					sprite.image_rect.centerx = sprite.image_rect.centerx + sprite.acceleration_constant
+			
 
 		#Draw the Gallade Image
 		sprite.draw_sprite()
