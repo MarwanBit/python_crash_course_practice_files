@@ -30,9 +30,9 @@ class Gallade(pygame.sprite.Sprite):
 
 	def update(self):
 		'''updates the movement flag depending on which key is pressed'''
-		if self.moving_right_flag:
+		if self.moving_right_flag and self.image_rect.right < self.screen_rect.right:
 			self.image_rect.centerx += 1
-		if self.moving_left_flag:
+		if self.moving_left_flag and self.image_rect.left > self.screen_rect.left:
 			self.image_rect.centerx -= 1
 			
 
