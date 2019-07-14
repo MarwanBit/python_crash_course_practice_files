@@ -118,7 +118,7 @@ while loop_bool:
 	bullet.draw_bullet()
 
 	#draw the ship
-	ship.draw_sprite()
+	#ship.draw_sprite()
 
 
 	#updates the screen 
