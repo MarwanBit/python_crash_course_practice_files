@@ -20,6 +20,7 @@ class Bullet(pygame.sprite.Sprite):
 		self.bullet_image_top = self.ship
 		#Speed of the Bullet
 		self.speed_factor = 1 
+		self.shot_loop_bool = False
 
 	def draw_bullet(self):
 		'''draws the bullet'''
@@ -27,7 +28,8 @@ class Bullet(pygame.sprite.Sprite):
 
 	def bullet_update(self):
 		'''updates the bullet when space bar is pressed'''
-		self.bullet_image.x -= self.speed_factor
+		if self.shot_loop_bool:
+			self.bullet_image.x -= self.speed_factor
 
 
 class Ship(pygame.sprite.Sprite):
@@ -57,7 +59,6 @@ class Ship(pygame.sprite.Sprite):
 
 	def draw_sprite(self):
 		'''draws the sprite over the screen'''
-		self.image = pygame.transform.scale(self.image, (100, 130))
 		self.screen.blit(pygame.transform.rotate(self.image, 90), self.image_rect)
 
 	def update_sprite(self):
@@ -102,7 +103,7 @@ while loop_bool:
 			if event.key == pygame.K_LEFT:
 				ship.left_movement_flag = True
 			if event.key == pygame.K_SPACE:
-				bullet.bullet_update()
+				bullet.shot_loop_bool = True
 		if event.type == pygame.KEYUP:
 			if event.key == pygame.K_RIGHT:
 				ship.right_movement_flag = False
