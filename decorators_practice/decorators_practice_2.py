@@ -67,7 +67,7 @@ def find_difference(num_1,num_2):
 	'''finds the difference of num_1 and num_2'''
 	return float(float(num_1)-float(num_2))
 
-print(find_difference(14,12))
+print(find_difference(12,456464))
 
 #Note: Decorators take in a function and return a modified function which you can then call 
 #Note: Decorators are applied from a bottom up way, for example above, find_difference is put into
