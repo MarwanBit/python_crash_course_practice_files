@@ -1,6 +1,23 @@
 import pygame
 import sys 
 
+def fire_bullet(screen, ship, bullets):
+	'''The function which handles bullet firing in this game'''
+	if len(bullets) < 3: #3 is the bullet limit in this game
+		new_bullet = Bullet(screen,ship)
+		bullets.add(new_bullet)
+
+def update_bullets(bullets):
+	'''Update position of bullets and get rid of the old bullets.'''
+	#Update bullet positions.
+	bullets.update()
+
+	#Get rid of bullets that have dissapeared.
+	for bullet in bullets.copy():
+		if bullet.rect.x >= 600:
+			bullets.remove(bullet)
+
+
 class Bullet(pygame.sprite.Sprite):
 	'''Creates the bullet class'''
 	def __init__(self, screen, ship):
@@ -15,7 +32,7 @@ class Bullet(pygame.sprite.Sprite):
 		self.rect.top = ship.image_rect.top
 
 		#Store the bullet's position as a decimal value
-		self.y = float(self.rect.y)
+		self.x = float(self.rect.x)
 
 		self.color = (190,190,190)
 		self.speed_factor = 1
@@ -23,9 +40,9 @@ class Bullet(pygame.sprite.Sprite):
 	def update(self):
 		'''Move the bullet up the screen.'''
 		#Update the decimal position of the bullet
-		self.y -= self.speed_factor
+		self.x += self.speed_factor
 		#Update the rect position
-		self.rect.y = self.y
+		self.rect.x = self.x
 
 	def draw_bullet(self):
 		'''Draw the bullet to the screen'''
@@ -80,9 +97,8 @@ pygame.display.set_caption("Sideways Shooter")
 
 #Creates the ship
 ship = Ship(screen)
-#Flip the ship
 
-bullet = Bullet(screen, ship)
+#Makes the bullets group
 bullets = pygame.sprite.Group()
 
 while loop_bool:
@@ -103,7 +119,7 @@ while loop_bool:
 			if event.key == pygame.K_LEFT:
 				ship.left_movement_flag = True
 			if event.key == pygame.K_SPACE:
-				bullet.shot_loop_bool = True
+				fire_bullet(screen,ship,bullets)
 		if event.type == pygame.KEYUP:
 			if event.key == pygame.K_RIGHT:
 				ship.right_movement_flag = False
@@ -113,13 +129,15 @@ while loop_bool:
 	#Updates the ship's position
 	ship.update_sprite()
 
+	#Redraw all bullets behind ship and aliens
+	for bullet in bullets.sprites():
+		bullet.draw_bullet()
 
 	#draw the bullets
-	bullet.draw_bullet()
+	update_bullets(bullets)
 
 	#draw the ship
 	ship.draw_sprite()
-
 
 	#updates the screen 
 	pygame.display.flip()
