@@ -1,5 +1,6 @@
 import pygame 
 import sys
+import random
 
 class RocketGameSettings():
 	'''create the settings for this mini-game'''
@@ -8,6 +9,34 @@ class RocketGameSettings():
 		self.height = height
 		self.width = width
 		self.acceleration_constant = 1.5 
+
+class Star(pygame.sprite.Sprite):
+	'''class which creates a star'''
+
+	def __init__(self, screen, settings):
+		'''intializes the star'''
+		super().__init__()
+		#Store the screen and settings in the instance of the object
+		self.screen = screen 
+		self.settings = settings 
+
+		#Stores the object of the star
+		self.image = pygame.image.load('star.bmp')
+		self.image_rect =self.image.get_rect() #get the rectangular coords of the star 
+
+		#rectangle properties
+		self.image_rect.centerx = self.image_rect.centerx
+		self.image_rect.bottom = self.image_rect.bottom 
+		self.image_rect.centery = self.image_rect.centery
+
+		#rectangle properties of the screen
+		self.screen_rect = self.screen.get_rect()
+		self.screen_rect_centerx = self.screen_rect.centerx 
+		self.screen_rect_bottom = self.screen_rect.bottom
+
+	def draw_sprite(self,screen):
+		'''draws the sprite'''
+		self.screen.blit(self.image, self.image_rect)
 
 class Rocket(pygame.sprite.Sprite):
 	'''class which handles the rocket object''' 
@@ -45,9 +74,9 @@ class Rocket(pygame.sprite.Sprite):
 			self.image_rect.centerx += self.acceleration_constant 
 		if self.left_movement_flag and self.image_rect.left > self.screen_rect.left: 
 			self.image_rect.centerx -= self.acceleration_constant
-		if self.up_movement_flag and self.image_rect.centery > self.screen_rect.centery:
+		if self.up_movement_flag and self.image_rect.top > self.screen_rect.top:
 			self.image_rect.centery -= self.acceleration_constant
-		if self.down_movement_flag:
+		if self.down_movement_flag and self.image_rect.bottom < self.screen_rect.bottom:
 			self.image_rect.centery += self.acceleration_constant
 
 
@@ -61,11 +90,21 @@ if __name__ == "__main__":
 	loop_bool = True
 	rocket = Rocket(screen,stg)
 
+	#Creates a group of stars
+	stars = pygame.sprite.Group()
+	for i in range(0,20):
+		star = Star(screen,stg)
+		star.image_rect.centerx = random.randint(-20,500)
+		star.image_rect.centery = random.randint(-20,500)
+		stars.add(star)
+
+	print(stars)	
+
 	while loop_bool:
 		'''game's mainloop''' 
 
 		#fills the screen with white 
-		screen.fill((255,255,255))
+		screen.fill((0,0,0))
 
 		#event loop
 		for event in pygame.event.get():
@@ -92,6 +131,10 @@ if __name__ == "__main__":
 
 		#Updates the rocket's position
 		rocket.update()
+
+		#draws the stars
+		for star in stars:
+			star.draw_sprite(screen)
 
 		#draws the rocket on top 
 		rocket.draw_rocket(screen) 
