@@ -10,7 +10,7 @@ class Bullet(pygame.sprite.Sprite):
 		#gives you access to  the ship and screen
 		self.screen = screen 
 		self.screen_rect = self.screen.get_rect()
-		self.ship = ship.screen_rect.top
+		self.ship = ship.screen_rect.bottom
 
 		#creates the bullet rectangle object
 		self.bullet_image = pygame.Rect(0,0,self.width, self.height)
