@@ -3,33 +3,33 @@ import sys
 
 class Bullet(pygame.sprite.Sprite):
 	'''Creates the bullet class'''
-	def __init__(self,screen,ship):
-		#defines the ship and height of a bullet
-		self.width = 3
-		self.height = 15 
-		#gives you access to  the ship and screen
-		self.screen = screen 
-		self.screen_rect = self.screen.get_rect()
-		self.ship = ship.screen_rect.bottom
+	def __init__(self, screen, ship):
+		'''Create a bullet object at the ship's current position'''
+		super().__init__()
+		self.screen = screen
 
-		#creates the bullet rectangle object
-		self.bullet_image = pygame.Rect(0,0,self.width, self.height)
-		self.bullet_color = (230,230,230)
-		self.bullet_image_top = self.bullet_image.top
-		#sets the top of the bullet to be equal to the top of the ship
-		self.bullet_image_top = self.ship
-		#Speed of the Bullet
-		self.speed_factor = 1 
-		self.shot_loop_bool = False
+
+		#Create a bullet rect at (0,0) and then set correct position
+		self.rect = pygame.Rect(0,0, 15, 5)
+		self.rect.centerx = ship.image_rect.centerx
+		self.rect.top = ship.image_rect.top
+
+		#Store the bullet's position as a decimal value
+		self.y = float(self.rect.y)
+
+		self.color = (190,190,190)
+		self.speed_factor = 1
+
+	def update(self):
+		'''Move the bullet up the screen.'''
+		#Update the decimal position of the bullet
+		self.y -= self.speed_factor
+		#Update the rect position
+		self.rect.y = self.y
 
 	def draw_bullet(self):
-		'''draws the bullet'''
-		pygame.draw.rect(self.screen, self.bullet_color, self.bullet_image)
-
-	def bullet_update(self):
-		'''updates the bullet when space bar is pressed'''
-		if self.shot_loop_bool:
-			self.bullet_image.x -= self.speed_factor
+		'''Draw the bullet to the screen'''
+		pygame.draw.rect(self.screen, self.color, self.rect)
 
 
 class Ship(pygame.sprite.Sprite):
@@ -118,7 +118,7 @@ while loop_bool:
 	bullet.draw_bullet()
 
 	#draw the ship
-	#ship.draw_sprite()
+	ship.draw_sprite()
 
 
 	#updates the screen 
