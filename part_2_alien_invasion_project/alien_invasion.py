@@ -26,10 +26,11 @@ def run_game():
 	aliens = Group()
 
 	#Create the fleet of aliens.
-	gf.create_fleet(ai_settings, screen, aliens)
+	gf.create_fleet(ai_settings, screen, space_ship, aliens)
 
 	#Set the background color
 	bg_color = (230,230,20)
+
 
 	#Make an alien.
 	alien = Alien(ai_settings, screen)
