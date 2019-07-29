@@ -24,7 +24,7 @@ number_of_stars = star_screen_space_width
 
 
 for i in range(0,int(number_of_stars)):
-	if i & 50 == 0:
+	if i % 100 == 0:
 		stars = Star(screen)
 		stars.centerx = int(i)
 		stars.image_rect.x = int(i)
