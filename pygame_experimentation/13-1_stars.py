@@ -18,17 +18,16 @@ class Star(pygame.sprite.Sprite):
 
 star = Star(screen)
 star_group = pygame.sprite.Group()
+number_of_rows = 7
 
-star_screen_space_width = Width - (2*star.image_rect.width)
-number_of_stars = star_screen_space_width
-
-
-for i in range(0,int(number_of_stars)):
-	if i % 100 == 0:
-		stars = Star(screen)
-		stars.centerx = int(i)
-		stars.image_rect.x = int(i)
-		star_group.add(stars)
+for l in range(0,number_of_rows):
+	for i in range(0,int(int(Width))):
+		if i % 100 == 0:
+			stars = Star(screen)
+			stars.centerx = int(i)
+			stars.image_rect.x = int(i)
+			stars.image_rect.y = int(50*l)
+			star_group.add(stars)
 
 
 while loop_bool:
